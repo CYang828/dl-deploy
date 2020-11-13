@@ -15,7 +15,7 @@ uvicorn sentiment_analyzer.api:app
 ```
 ```bash
 # other console
-http POST http://localhost:8000/predict text="This app is a total waste of time!"
+http POST 'http://localhost:8000/predict?text="This app is a total waste of time!"'
 ```
 ```json
 {
