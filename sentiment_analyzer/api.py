@@ -24,3 +24,7 @@ def predict(request: SentimentRequest, model: Model = Depends(get_model)):
     return SentimentResponse(
         sentiment=sentiment, confidence=confidence, probabilities=probabilities
     )
+
+
+
+

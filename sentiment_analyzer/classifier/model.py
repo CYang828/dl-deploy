@@ -18,7 +18,8 @@ class Model:
 
         classifier = SentimentClassifier(len(config["CLASS_NAMES"]))
         classifier.load_state_dict(
-            torch.load(config["PRE_TRAINED_MODEL"], map_location=self.device)
+            torch.load(config["PRE_TRAINED_MODEL"], map_location=self.device),
+            strict=False
         )
         classifier = classifier.eval()
         self.classifier = classifier.to(self.device)
@@ -53,3 +54,4 @@ model = Model()
 
 def get_model():
     return model
+
