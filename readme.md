@@ -25,10 +25,15 @@ wget http://aimaksen.bslience.cn/torch-bert-sentiment.bin -P assets/
 uvicorn sentiment_analyzer.api:app
 ```
 
+
+5. 测试服务
+先安装 (HTTPie)[https://httpie.io/]，然后运行下面命令
+
 ```bash
 # other console
 http POST http://localhost:8000/predict text="OMG. I love how easy it is to stick to my schedule. Would recommend to everyone"
 ```
+
 ```json
 {
     "confidence": 0.9999295473098755,
