@@ -27,7 +27,7 @@ uvicorn sentiment_analyzer.api:app
 
 
 5. 测试服务
-先安装 (HTTPie)[https://httpie.io/]，然后运行下面命令
+先安装 [HTTPie](https://httpie.io/)，然后运行下面命令
 
 ```bash
 # other console
