@@ -27,15 +27,16 @@ uvicorn sentiment_analyzer.api:app
 
 ```bash
 # other console
-http POST http://localhost:8000/predict text="OMG. I love how easy it is to stick to my schedule. Would recommend to everyone"```
+http POST http://localhost:8000/predict text="OMG. I love how easy it is to stick to my schedule. Would recommend to everyone"
+```
 ```json
 {
-    "confidence": 0.999885082244873,
+    "confidence": 0.9999295473098755,
     "probabilities": {
-        "negative": 0.999885082244873,
-        "neutral": 8.876612992025912e-05,
-        "positive": 2.614063305372838e-05
+        "negative": 1.7753758584149182e-05,
+        "neutral": 5.275019793771207e-05,
+        "positive": 0.9999295473098755
     },
-    "sentiment": "negative"
+    "sentiment": "positive"
 }
 ```
